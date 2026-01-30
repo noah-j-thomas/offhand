@@ -1,0 +1,127 @@
+body {
+    background-color: #cfcfcf;
+
+    .back-btn a {
+    color: black;
+
+    .reportbug-header {
+    color: black;
+}
+
+    .footer-text {
+    color: black;
+}
+}
+
+
+}
+
+body.dark {
+    background-color: #171717;
+
+    .back-btn a {
+    color: white;
+}
+
+.reportbug-header {
+    color: white;
+}
+
+.footer-text {
+    color: white;
+}
+}
+
+.back-btn-container {
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+}
+
+
+
+.back-btn {
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.report-container {
+    position: absolute;
+    display: block;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.reportbug-header {
+    font-family: "Consolas";
+}
+
+
+.report-entry-container {
+    justify-self: center;
+    position: absolute;
+}
+
+.report-entry {
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    border:#575757 8px solid;
+    border-radius: 20px;
+    font-family: "Consolas";
+    color: black;
+    background-color: white;
+    
+}
+
+::placeholder {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.report-submit-container {
+    display: flex;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-container {
+    position: absolute;
+    padding-top: 40vh;
+    left: 50%;
+    transform: translate(-50%);
+    width: 500px;
+    z-index: 1;
+}
+
+.footer-text {
+    text-align: center;
+    font-family: "Consolas";
+}
+
+  /* animations */
+
+@keyframes fade-in {
+  
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.report-container {
+    animation: fade-in 0.3s;
+}
+
+
+/**/
+

@@ -1,0 +1,258 @@
+body {
+  background-color: #cfcfcf;
+  .header {
+    color: black;
+  }
+  
+  .bodytext {
+  color: black;
+}
+
+  .img-header {
+  color: black;
+
+}
+.img-header2 {
+  color: black;
+}
+
+.img-header3 a{
+  color: black;
+}
+
+.img-header4 a{
+  color: black;
+}
+
+.history-header a {
+    color: black;
+}
+
+.history-body {
+    color: black;
+}
+
+.analysis-header a {
+    color: black;
+}
+
+.analysis-body {
+    color: black;
+}
+
+.back-btn a {
+    color: black;
+}
+}
+
+body.dark {
+  background-color: #171717;
+
+  .header {
+    color: white;
+  }
+  .emphasis {
+    color: #ebc2c2;
+  }
+  
+  .bodytext {
+  color: white;
+}
+  .img-header {
+  color: white;
+
+}
+.img-header2 {
+  color: white;
+}
+
+.img-header3 a{
+  color: white;
+}
+
+.img-header4 a{
+  color: white;
+}
+
+.history-header a {
+    color: white;
+}
+
+.history-body {
+    color: white;
+}
+
+.analysis-header a {
+    color: white;
+}
+
+.analysis-body {
+    color: white;
+}
+.back-btn a {
+    color: white;
+}
+}
+
+
+
+
+.text-container {
+  position: absolute;
+  align-items: center;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.header {
+  text-align: center;
+  padding: 5px;
+  font-family: "Consolas";
+  font-size: 40px;
+}
+.body-container {
+  width: 400px;
+}
+.bodytext {
+  text-align: center;
+  font-family: "Consolas";
+}
+
+.img-container {
+  position: fixed;
+  display: block;
+  right: 0;
+  padding-right: 10vh;
+  padding-top: 10vh;
+  text-align: center;
+
+  .noah-img {
+    margin-top: -20px;
+    width: 400px;
+  height: 510px;
+}
+
+.img-header {
+  margin-bottom: -20px;  
+  text-align: center;
+  font-family: "Consolas";
+  font-size: 20px;
+}
+.img-header2 {
+  text-align: center;
+  font-family: "Consolas";
+  font-size: 30px;
+}
+
+.img-header3 a{
+  text-align: center;
+  font-family: "Consolas";
+  font-size: 20px;
+}
+
+.img-header4 a{
+  text-align: center;
+  font-family: "Consolas";
+  font-size: 20px;
+}
+}
+
+.img-header4 {
+    margin-top: -15px;
+}
+
+
+
+.history-container {
+  position: fixed;
+  display: block;
+  left: 0;
+  padding-left: 23vh;
+  padding-top: 15vh;
+  text-align: center;
+  z-index: 3;
+}
+
+
+
+.history-header {
+    font-family: "Consolas";
+    text-align: center;
+}
+
+.history-body-container {
+    width: 300px;
+}
+
+.history-body {
+    font-family: "Consolas";
+}
+
+.analysis-container {
+  position: fixed;
+  display: block;
+  left: 0;
+  padding-left: 23vh;
+  padding-top: 50vh;
+  text-align: center;
+  
+}
+
+
+.analysis-header {
+    font-family: "Consolas";
+    text-align: center;
+}
+
+.analysis-body-container {
+    width: 300px;
+}
+
+.analysis-body {
+    font-family: "Consolas";
+}
+
+.back-btn-container {
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+}
+
+
+
+.back-btn {
+    font-size: 20px;
+    padding: 10px;
+}
+
+  /* animations */
+
+@keyframes fade-in {
+  
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+/**/
+
+
+.history-container {
+    animation: fade-in .3s;
+}
+.analysis-container {
+    animation: fade-in .3s;
+}
+.text-container {
+    animation: fade-in .3s;
+}
+.img-container {
+    animation: fade-in .3s;
+}
+.back-btn-container {
+    animation: fade-in .3s;
+}

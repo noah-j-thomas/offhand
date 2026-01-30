@@ -1,0 +1,789 @@
+@font-face {
+  src: url("fonts/consolas.ttf");
+  font-family: "Consolas";
+}
+
+
+
+
+body {
+  
+  background-color: #cfcfcf;
+  #weather {
+    color:black;
+    cursor: pointer;
+  }
+  #clock {
+    color: black;
+  }
+  #calendar {
+    color: black;
+  }
+  .plus-btn {
+    background-color: #dadada;
+    color: rgb(95, 95, 95);
+    outline: none;
+    border: none;
+  }
+  .dropdown-options a {
+    color: rgb(89, 89, 89);
+  }
+  .dropdown-options {
+    background-color: rgb(223, 222, 222);
+  }
+  #blackCloud {
+    color: black;
+  }
+  .black-logo {
+    width: 10vh;
+    height: 4vh;
+    display: flex;
+  }
+  .white-logo {
+    display: none;
+  }
+  .timedateweather {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 0.8vh;
+  }
+  .size-dropdown-btn {
+  background-color: #bfbdbd;
+  color:rgb(67, 67, 67);
+  }
+  .size-dropdown-options {
+  scrollbar-color: #565656 #bbbbbb;
+  }
+  .size-dropdown-options a {
+  color: rgb(87, 87, 87);
+  }
+  .youtube-link-container {
+  background-color: #dadada;
+  }
+  .white-menu-btn {
+    display: none;
+  }
+    .white-right-arrow {
+      display: none;
+  }
+    .white-down-arrow {
+      display: none;
+    }
+    
+  
+   
+    .white-right-arrow {
+      display: none;
+  }
+    .white-down-arrow {
+      display: none;
+    }
+    .white-right-arrow2 {
+      display: none;
+  }
+    .white-down-arrow2 {
+      display: none;
+    }
+    
+  
+    .black-right-arrow {
+      display: inline-flex;
+      position: absolute;
+      width: 5.5vh;
+      height: 4.5vh;
+  }
+
+    .black-down-arrow {
+      display: none;
+      position: absolute;
+      width: 5.5vh;
+      height: 4.5vh;
+  }
+  .black-right-arrow2 {
+      display: inline-flex;
+      position: absolute;
+      width: 5.5vh;
+      height: 4.5vh;
+  }
+
+    .black-down-arrow2 {
+      display: none;
+      position: absolute;
+      width: 5.5vh;
+      height: 4.5vh;
+  }
+
+  .black-right-arrow.toggle-right-arrow {
+  display: none;
+}
+
+.black-down-arrow.toggle-down-arrow {
+  display: inline-flex;
+}
+
+.black-right-arrow2.toggle-right-arrow2 {
+  display: none;
+}
+
+.black-down-arrow2.toggle-down-arrow2 {
+  display: inline-flex;
+}
+.updates-dropdown a {
+  font-size: 2.3vh;
+  text-align: center;  
+}
+
+.community-dropdown a {
+  font-size: 2.3vh;  
+  text-align: center;
+
+}
+
+}
+
+body.dark {
+  
+  background-color: #171717;
+  #weather {
+    color: rgb(159, 159, 159);
+  }
+  #clock {
+    color: rgb(159, 159, 159);
+  }
+  #calendar {
+    color: rgb(159, 159, 159);
+  }
+  .switcher {
+    background-color: rgb(159, 159, 159);
+  }
+  .plus-btn {
+    background-color: #2c2b2b;
+    color: rgb(162, 162, 162);
+  }
+  .dropdown-options a {
+    color: rgb(159, 159, 159);
+    font-weight: bold;
+  }
+  .notepad-label:hover{
+  color: rgb(74, 29, 222);
+  }
+  .youtube-label:hover{
+  color:red;
+  }
+  .spotify-text:hover{
+  color:springgreen;
+  }
+  .dropdown-options {
+    background-color: rgb(22, 22, 22);
+  }
+  #blackCloud {
+    color: #757575;
+  }
+  .notepad-textarea {
+  background-color: #2c2b2b;
+  font-weight: bolder;
+  color: white;
+  }
+  .enter-youtube-link  {
+  background-color: #292828;
+  color: #757575;
+  }
+  input::placeholder {
+    color: #757575;
+    font-weight: bold;
+  }
+  input:focus::placeholder {
+    color: transparent;
+  }
+  .enter-youtube-btn {
+    color: #757575;
+    background-color: #171717;
+  }
+  .black-logo {
+    display: none;
+  }
+  .white-logo {
+    width: 10vh;
+    height: 4vh;
+    display: flex;
+  }
+  .size-dropdown-btn {
+  background-color: #252525;
+  color:rgb(159, 159, 159);
+  }
+  .size-dropdown-options {
+  scrollbar-color: #252525 #cfcfcf;
+  }
+  .size-dropdown-options a {
+  color: white;
+  }
+  .youtube-link-container {
+  background-color: #2c2b2b;
+  }
+  .black-menu-btn {
+    display: none;
+  }
+  .white-menu-btn {
+    display: flex;
+  }
+  
+ 
+    .black-right-arrow {
+      display: none;
+  }
+    .black-down-arrow {
+      display: none;
+    }
+    .black-right-arrow2 {
+      display: none;
+  }
+    .black-down-arrow2 {
+      display: none;
+    }
+    
+  
+    .white-right-arrow {
+      display: inline-flex;
+      position: absolute;
+      width: 5.5vh;
+      height: 4.5vh;
+  }
+
+    .white-down-arrow {
+      display: none;
+      position: absolute;
+      width: 5.5vh;
+      height: 4.5vh;
+  }
+  .white-right-arrow2 {
+      display: inline-flex;
+      position: absolute;
+      width: 5.5vh;
+      height: 4.5vh;
+  }
+
+    .white-down-arrow2 {
+      display: none;
+      position: absolute;
+      width: 5.5vh;
+      height: 4.5vh;
+  }
+
+  .white-right-arrow.toggle-right-arrow {
+  display: none;
+}
+
+.white-down-arrow.toggle-down-arrow {
+  display: inline-flex;
+}
+
+.white-right-arrow2.toggle-right-arrow2 {
+  display: none;
+}
+
+.white-down-arrow2.toggle-down-arrow2 {
+  display: inline-flex;
+}
+  
+
+
+
+  .menu-dropdown a {
+  display: block;
+  text-decoration: none;
+  font-family: "Consolas";
+  font-weight: bolder;
+  color: rgb(159, 159, 159);
+}
+  .menu-dropdown a:hover {
+    color: rgb(207, 207, 207);
+  }
+.updates-dropdown a {
+  font-size: 2.3vh;  
+}
+
+}
+
+
+.report-bug-btn {
+  white-space: nowrap;
+}
+
+.updates-dropdown {
+  display: none;
+}
+
+.community-dropdown {
+  display: none;
+}
+
+
+.menu-btn-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 6vh;
+  height: 5vh;
+  .white-menu-btn {
+    width: 5vh;
+    height: 5vh;
+  }
+  .black-menu-btn {
+    width: 5vh;
+    height: 5vh;
+  }
+  
+   z-index: 5;
+}
+
+.menu-dropdown {
+  position: absolute;
+  padding-top: 4vh;
+  padding-left: 0.5vh;
+  display: none;
+  
+    .white-right-arrow {
+      display: inline-flex;
+      position: absolute;
+      width: 5.5vh;
+      height: 4.5vh;
+  }
+
+    .white-down-arrow {
+      display: none;
+      position: absolute;
+      width: 5.5vh;
+      height: 4.5vh;
+  }
+
+  white-right-arrow2 {
+      display: inline-flex;
+      position: absolute;
+      width: 5.5vh;
+      height: 4.5vh;
+  }
+
+    .white-down-arrow2 {
+      display: none;
+      position: absolute;
+      width: 5.5vh;
+      height: 4.5vh;
+  }
+}
+
+.menu-dropdown a {
+  display: block;
+  text-decoration: none;
+  font-family: "Consolas";
+  font-weight: bolder;
+  font-size: 3vh;
+  padding: .5vh;
+  color: rgb(0, 0, 0);
+}
+.menu-dropdown a:hover{
+  color:rgb(91, 91, 91);
+}
+
+
+
+.logo-container {
+  position: absolute;
+  display: flex;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  padding: 1vh;
+  animation: fade-in 0.5s;
+}
+
+.home-button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.day-night-container {
+  display: flex;
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1vh;
+}
+
+.switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6vh;
+  height: 3vh;
+  border-radius: 1vh;
+  cursor: pointer;
+  background-color: #b7b7b7;
+  border: none;
+  animation: fade-in 0.3s;
+  .slash {
+    font-size: 3vh;
+  }
+  .nightpic{
+    width: 2vh;
+    height: 3vh;
+  }
+  .lightpic{
+    width: 2vh;
+    height: 3.2vh;
+  }
+}
+
+
+
+.timedateweather {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 0.8vh;
+  animation: fade-in 0.5s;
+}
+
+#clock {
+  font-family: Consolas;
+  font-size: 2.5vh;
+  text-align: right;
+  font-weight: bold;
+}
+
+#calendar {
+  font-family: Consolas;
+  font-size: 2.3vh;
+  text-align: right;
+  font-weight: bold;
+}
+
+#weather {
+  font-family: Consolas;
+  font-size: 2.5vh;
+  text-align: right;
+  padding: 0.2vh;
+  font-weight: bold;
+}
+
+#blackCloud {
+  position: relative;
+  width: 2vh;
+  padding: 0.1vh;
+}
+
+.elements-container {
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: Consolas;
+}
+
+.button-container {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.plus-btn {
+  font-size: 48px;
+  padding: 120px 180px;
+  display: flex;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: white;
+  animation: fade-in 0.3s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  
+}
+
+.dropdown-options a{
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  font-weight: bolder;
+}
+
+.dropdown-options {
+  display: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  border-radius: 10px;
+}
+
+.notepad-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.size-btn-container {
+  padding: 10px;
+}
+
+.size-dropdown-btn {
+  display: none;
+  font-size: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-family: Consolas;
+  border-radius: 10px;
+  border: none;
+  padding: 2px 10px;
+  cursor: pointer;
+}
+
+.size-dropdown-options {
+  justify-self: center;
+  padding: 0.8vh;
+  position: fixed;
+  font-family: Consolas;
+  font-weight: bold;
+  border: black solid 0.1vh;
+  border-radius: 1vh;
+  max-height:100px;
+  overflow: scroll; 
+  overflow-x: hidden;
+  scrollbar-color: #252525 #171717;
+  display: none;
+}
+
+.size-dropdown-options a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding: 0.5vh;
+  
+}
+
+.notepad-textarea {
+  width: 348px;
+  height: 255px;
+  position: relative;
+  padding: 20px;
+  display: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #dddbdb;
+  border-radius: 5%;
+  border-width: 2px;
+  outline: none;
+  border: none;
+}
+
+
+
+.youtube-link-container {
+  width: 348px;
+  height: 255px;
+  position: absolute;
+  padding: 20px;  
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5%;
+  border-width: 2px;
+  outline: none;
+  border: none;
+  display: none;
+  place-self: center;
+  resize: none;
+  overflow: auto;
+  cursor: grab;
+}
+
+.enter-youtube-link {
+  font-size: 18px;
+  padding: 20px 20px;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-family: Consolas;
+  text-decoration: none;
+  display: flex;
+  background-color: rgb(231, 231, 231);
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  place-self: center;
+}
+
+.youtube-btn-container {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, 40%);
+}
+
+.enter-youtube-btn {
+  padding: 10px 55px;
+  cursor: pointer;
+  font-family: Consolas;
+  font-weight: bolder;
+  font-size: 18px;
+  background-color: #c3c3c3;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  display: flex;
+  color: rgb(87, 87, 87);
+}
+
+.youtube-video {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 18px;
+}
+
+input::placeholder {
+  color: #757575;
+  font-weight: bold;
+}
+
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.notepad-label:hover{
+  color: rgb(74, 29, 222);
+  }
+.youtube-label:hover{
+  color:red;
+  }
+.spotify-text:hover{
+  color:springgreen;
+  }
+
+
+  /* animations */
+
+@keyframes fade-in {
+  
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+  
+
+
+  /* js styling */
+
+.dropdown-options.show-dropdown {
+  display: block;
+  animation: fade-in 0.5s; 
+}
+
+.plus-btn.hide-plus {
+  display: none;
+}
+
+.notepad-textarea.text-area {
+  display: block;
+  animation: fade-in 0.3s; 
+}
+
+.size-dropdown-btn.text-area {
+  display: block;
+  animation: fade-in 0.5s; 
+}
+
+.dropdown-options.hide-dropdown {
+  display: none;
+}
+
+.youtube-link-container.show-input{
+  display: grid;
+  animation: fade-in 0.3s; 
+  }
+
+.plus-btn.no-cursor {
+  cursor: default;
+}
+
+.size-dropdown-options.show-dropdown {
+  display: block;
+}
+
+.youtube-link-container.show-resize {
+  resize: both;
+}
+
+#temple.hide-text {
+  display: none;
+}
+
+#fetching {
+  display: none;
+}
+
+#fetching.show-fetching {
+  display: block;
+}
+
+.menu-dropdown.toggle-dropdown {
+  display: block;
+  .updates-btn {
+    animation: fade-in 0.3s; 
+  }
+  .community-btn {
+    animation: fade-in 0.5s; 
+  }
+  .about-btn {
+    animation: fade-in 0.7s; 
+  }
+  .report-bug-btn {
+    animation: fade-in 0.9s; 
+  }
+  
+}
+
+.updates-dropdown.toggle-dropdown {
+  display: block;
+  .patch-log-btn{
+    animation: fade-in 0.5s;
+  }
+  .blog-post-btn{
+    animation: fade-in 0.8s;
+  }
+}
+
+.community-dropdown.toggle-dropdown2 {
+  display: block;
+  .discord-btn{
+    animation: fade-in 0.5s;
+  }
+  .twitter-btn{
+    animation: fade-in 0.8s;
+  }
+}
+
