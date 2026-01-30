@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class = "logo-container">
+    <div class="logo-container">
       <button onclick="window.location.reload()" class="home-button">
-      <img src="/public/media/OffhandWhiteLogo.png" class="white-logo">
-      <img src="/public/media/OffhandBlackLogo.png" class="black-logo">
+        <img src="./public/media/OffhandWhiteLogo.png" class="white-logo" />
+        <img src="./public/media/OffhandBlackLogo.png" class="black-logo" />
       </button>
     </div>
-    
-    
-    
+
     <div class="timedateweather">
       <div id="clock">
         <span id="time"></span>
@@ -24,93 +22,141 @@
         <span id="date"></span>
       </div>
     </div>
-    
-    
-    
-    
+
     <div class="day-night-container">
-    <button class="switcher">
-      <img src="/public/media/mode_night_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="nightpic">
-      <span class = "slash">/</span>
-      <img src="/public/media/light_mode_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="lightpic">
-    </button>
+      <button class="switcher">
+        <img
+          src="./public/media/mode_night_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+          class="nightpic"
+        />
+        <span class="slash">/</span>
+        <img
+          src="./public/media/light_mode_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+          class="lightpic"
+        />
+      </button>
     </div>
 
-
     <div class="elements-container">
-      <div class="button-container"> 
+      <div class="button-container">
         <button class="plus-btn">+</button>
-          <div class="notepad-container">
-            <textarea placeholder="Enter your notes here!" class="notepad-textarea"></textarea>
-              <div class = "size-btn-container">
-                <button class="size-dropdown-btn">Size</button>
-              </div>
-            <div class = "size-dropdown-options">
-                <a href="#" data-size="12px">12</a>
-                <a href="#" data-size="14px">14</a>
-                <a href="#" data-size="18px">18</a>
-                <a href="#" data-size="24px">24</a>
-                <a href="#" data-size="30px">30</a>
-                <a href="#" data-size="36px">36</a>
-                <a href="#" data-size="48px">48</a>
-                <a href="#" data-size="60px">60</a>
-                <a href="#" data-size="72px">72</a>
-            </div>
+        <div class="notepad-container">
+          <textarea
+            placeholder="Enter your notes here!"
+            class="notepad-textarea"
+          ></textarea>
+          <div class="size-btn-container">
+            <button class="size-dropdown-btn">Size</button>
           </div>
-          <div class="youtube-link-container"> 
-            <input class = "enter-youtube-link" placeholder="Paste the link here!">
-            <div class="youtube-btn-container">
-            <button class = "enter-youtube-btn">Enter</button>
-            </div>
+          <div class="size-dropdown-options">
+            <a href="#" data-size="12px">12</a>
+            <a href="#" data-size="14px">14</a>
+            <a href="#" data-size="18px">18</a>
+            <a href="#" data-size="24px">24</a>
+            <a href="#" data-size="30px">30</a>
+            <a href="#" data-size="36px">36</a>
+            <a href="#" data-size="48px">48</a>
+            <a href="#" data-size="60px">60</a>
+            <a href="#" data-size="72px">72</a>
           </div>
-          
-            <div class="dropdown-options">
-              <a href="#" class="notepad-label">Notepad</a>
-              <a href="#" class="youtube-label">Youtube</a>
-              <a href="#" class="spotify-text">Spotify</a>
-            </div>
+        </div>
+        <div class="youtube-link-container">
+          <input
+            class="enter-youtube-link"
+            placeholder="Paste the link here!"
+          />
+          <div class="youtube-btn-container">
+            <button class="enter-youtube-btn">Enter</button>
+          </div>
+        </div>
+
+        <div class="dropdown-options">
+          <a href="#" class="notepad-label">Notepad</a>
+          <a href="#" class="youtube-label">Youtube</a>
+          <a href="#" class="spotify-text">Spotify</a>
+        </div>
       </div>
     </div>
 
     <div class="menu-btn-container">
-          <button class="menu-btn">
-            <img src="/public/media/menu-btn/menu_24dp_9F9F9F_FILL0_wght400_GRAD0_opsz24.svg" class="white-menu-btn">
-            <img src="/public/media/menu-btn/menu_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" class="black-menu-btn">
-          </button>
-          <div class="menu-dropdown">
-            <a href ="#" class="updates-btn">Updates
-              <img src="./public/media/white-arrows/arrow_right_24dp_9F9F9F_FILL0_wght400_GRAD0_opsz24.svg" class="white-right-arrow">
-              <img src="./public/media/white-arrows/arrow_drop_down_24dp_9F9F9F_FILL0_wght400_GRAD0_opsz24.svg" class="white-down-arrow">
-              
-              <img src="./public/media/black-arrows/arrow_right_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="black-right-arrow">
-              <img src="./public/media/black-arrows/arrow_drop_down_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="black-down-arrow">            
-            </a>
-              <div class="updates-dropdown">
-                <a href ="/public/subpages/patch log/patchlog.html" class="patch-log-btn">Patch Log</a>
-                <a href ="/public/subpages/blog post/blogpost.html" class="blog-post-btn">Blog Post</a>
-              </div>
-              
-            <a href ="#" class="community-btn">Community
-              <img src="./public/media/white-arrows/arrow_right_24dp_9F9F9F_FILL0_wght400_GRAD0_opsz24.svg" class="white-right-arrow2">
-              <img src="./public/media/white-arrows/arrow_drop_down_24dp_9F9F9F_FILL0_wght400_GRAD0_opsz24.svg" class="white-down-arrow2">
-              
-              <img src="./public/media/black-arrows/arrow_right_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="black-right-arrow2">
-              <img src="./public/media/black-arrows/arrow_drop_down_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="black-down-arrow2">
-            </a>
-            <div class="community-dropdown">
-                <a href ="https://discord.com/" class="discord-btn">Discord (Soon!)</a>
-                <a href ="https://twitter.com/" class="twitter-btn">Twitter (Soon!)</a>
-              </div>
-            
-              <a href ="/public/subpages/about/about.html" class="about-btn">About</a>
-              <a href="/public/subpages/report bug/reportbug.html" class="report-bug-btn">Report Bug</a>
-            
-          </div>
+      <button class="menu-btn">
+        <img
+          src="./public/media/menu-btn/menu_24dp_9F9F9F_FILL0_wght400_GRAD0_opsz24.svg"
+          class="white-menu-btn"
+        />
+        <img
+          src="./public/media/menu-btn/menu_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg"
+          class="black-menu-btn"
+        />
+      </button>
+      <div class="menu-dropdown">
+        <a href="#" class="updates-btn"
+          >Updates
+          <img
+            src="./public/media/white-arrows/arrow_right_24dp_9F9F9F_FILL0_wght400_GRAD0_opsz24.svg"
+            class="white-right-arrow"
+          />
+          <img
+            src="./public/media/white-arrows/arrow_drop_down_24dp_9F9F9F_FILL0_wght400_GRAD0_opsz24.svg"
+            class="white-down-arrow"
+          />
+
+          <img
+            src="./public/media/black-arrows/arrow_right_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+            class="black-right-arrow"
+          />
+          <img
+            src="./public/media/black-arrows/arrow_drop_down_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+            class="black-down-arrow"
+          />
+        </a>
+        <div class="updates-dropdown">
+          <a
+            href="./public/subpages/patch log/patchlog.html"
+            class="patch-log-btn"
+            >Patch Log</a
+          >
+          <a
+            href="./public/subpages/blog post/blogpost.html"
+            class="blog-post-btn"
+            >Blog Post</a
+          >
         </div>
 
-   
+        <a href="#" class="community-btn"
+          >Community
+          <img
+            src="./public/media/white-arrows/arrow_right_24dp_9F9F9F_FILL0_wght400_GRAD0_opsz24.svg"
+            class="white-right-arrow2"
+          />
+          <img
+            src="./public/media/white-arrows/arrow_drop_down_24dp_9F9F9F_FILL0_wght400_GRAD0_opsz24.svg"
+            class="white-down-arrow2"
+          />
 
-    <script src="./index.js">
-    </script>
+          <img
+            src="./public/media/black-arrows/arrow_right_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+            class="black-right-arrow2"
+          />
+          <img
+            src="./public/media/black-arrows/arrow_drop_down_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+            class="black-down-arrow2"
+          />
+        </a>
+        <div class="community-dropdown">
+          <a href="https://discord.com/" class="discord-btn">Discord (Soon!)</a>
+          <a href="https://twitter.com/" class="twitter-btn">Twitter (Soon!)</a>
+        </div>
+
+        <a href="/public/subpages/about/about.html" class="about-btn">About</a>
+        <a
+          href="/public/subpages/report bug/reportbug.html"
+          class="report-bug-btn"
+          >Report Bug</a
+        >
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
