@@ -33,14 +33,7 @@ const whiteRightArrow2 = document.querySelector(".white-right-arrow2");
 const whiteDownArrow2 = document.querySelector(".white-down-arrow2");
 const blackRightArrow2 = document.querySelector(".black-right-arrow2");
 const blackDownArrow2 = document.querySelector(".black-down-arrow2");
-communityBtn.addEventListener("click", () => {
-  communityDropdown.classList.toggle("toggle-dropdown2");
-  whiteRightArrow2.classList.toggle("toggle-right-arrow2");
-  whiteDownArrow2.classList.toggle("toggle-down-arrow2");
-  blackRightArrow2.classList.toggle("toggle-right-arrow2");
-  blackDownArrow2.classList.toggle("toggle-down-arrow2");
-  
-})
+
 
 
 

@@ -1,5 +1,5 @@
 @font-face {
-  src: url("fonts/consolas.ttf");
+  src: url("public/fonts/consolas.ttf");
   font-family: "Consolas";
 }
 
@@ -134,11 +134,6 @@ body {
   text-align: center;  
 }
 
-.community-dropdown a {
-  font-size: 2.3vh;  
-  text-align: center;
-
-}
 
 }
 
@@ -314,9 +309,7 @@ body.dark {
   display: none;
 }
 
-.community-dropdown {
-  display: none;
-}
+
 
 
 .menu-btn-container {
@@ -755,9 +748,7 @@ input:focus::placeholder {
   .updates-btn {
     animation: fade-in 0.3s; 
   }
-  .community-btn {
-    animation: fade-in 0.5s; 
-  }
+
   .about-btn {
     animation: fade-in 0.7s; 
   }
@@ -777,13 +768,4 @@ input:focus::placeholder {
   }
 }
 
-.community-dropdown.toggle-dropdown2 {
-  display: block;
-  .discord-btn{
-    animation: fade-in 0.5s;
-  }
-  .twitter-btn{
-    animation: fade-in 0.8s;
-  }
-}
 

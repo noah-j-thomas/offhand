@@ -123,14 +123,14 @@ body.dark {
   position: fixed;
   display: block;
   right: 0;
-  padding-right: 10vh;
+  padding-right: 20vh;
   padding-top: 10vh;
   text-align: center;
 
   .noah-img {
-    margin-top: -20px;
-    width: 400px;
-  height: 510px;
+  margin-top: -20px;
+  width: 240px;
+  height: 310px;
 }
 
 .img-header {
