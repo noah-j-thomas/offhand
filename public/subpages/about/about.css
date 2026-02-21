@@ -105,6 +105,19 @@ body.dark {
   transform: translate(-50%);
 }
 
+
+.video-container {
+  z-index: 10;
+  position: absolute;
+  align-items: center;
+  padding: 100px;
+  bottom: 0vh;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
+
 .header {
   text-align: center;
   padding: 5px;
